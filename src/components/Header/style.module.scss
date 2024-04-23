@@ -1,0 +1,54 @@
+$breakpoint-tablet : 760px;
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px;
+
+    @media (max-width: $breakpoint-tablet) {
+        padding: 20px;
+    }
+
+    &__logo {
+        height: 68px;
+        width: 210px;
+        margin-right: 20px;
+        transition: color 0.4s;
+
+        @media (max-width: $breakpoint-tablet) {
+            width: 130px;
+            height: 45px;
+        }
+    }
+
+    &__nav {
+
+        &__link {
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+            font-size: 24px;
+
+            &:visited {
+                text-decoration: underline;
+            }
+
+            &:hover {
+                color: lighten(black, 30%);
+            }
+
+            @media (max-width: $breakpoint-tablet) {
+                font-size: 14px;
+            }
+        }
+
+        &__link:first-child {
+            margin-right: 40px;
+
+            @media (max-width: $breakpoint-tablet) {
+                margin-right: 20px;
+            }
+        }
+    }
+}
