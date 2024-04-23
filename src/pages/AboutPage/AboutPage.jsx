@@ -1,5 +1,8 @@
+import { Banner } from '../../components/Banner/Banner';
+import bannerAbout from '../../assets/banner-about.jpg';
+
 export const AboutPage = () => {
     return (
-        <p>About page</p>
+        <Banner img={bannerAbout} />
     );
 };

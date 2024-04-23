@@ -1,0 +1,44 @@
+$breakpoint-tablet : 760px;
+
+.container {
+    margin: 0 45px;
+    margin-bottom: 45px;
+    height: 220px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 0 4px 4px rgba($color: #000, $alpha: 0.25);
+    position: relative;
+    padding: 30px;
+
+    @media (max-width: $breakpoint-tablet) {
+        height: 110px;
+        justify-content: flex-start;
+        margin: 20px 20px;
+    }
+
+    &:before {
+        content: '';
+        height: inherit;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 25px;
+        background-color: rgba($color: #000000, $alpha: 0.6);
+    }
+
+    &__title {
+        font-size: 48px;
+        color: white;
+        z-index: 1;
+
+        @media (max-width: $breakpoint-tablet) {
+            font-size: 24px;
+        }
+    }
+}
