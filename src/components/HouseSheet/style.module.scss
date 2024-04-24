@@ -1,7 +1,21 @@
+$breakpoint-md : 768px;
+$breakpoint-lg : 1024px;
+$breakpoint-xl : 1280px;
+
 .main {
     padding: 0 45px 45px;
+
+    @media (max-width: $breakpoint-md) {
+        padding: 0 20px 45px;
+    }
 }
 
 .containerInfo {
     margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $breakpoint-md) {
+        flex-direction: column;
+    }
 }

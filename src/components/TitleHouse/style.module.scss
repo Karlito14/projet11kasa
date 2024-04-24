@@ -1,15 +1,35 @@
 $red-color : #FF6060;
+$breakpoint-md : 768px;
+$breakpoint-lg : 1024px;
+$breakpoint-xl : 1280px;
 
 .container {
+    width: 60%;
+
+    @media (max-width: $breakpoint-lg) {
+        width: 80%;
+    }
+
+    @media (max-width: $breakpoint-md) {
+        width: 100%;
+    }
 
     &__title {
         color: $red-color;
         font-size: 36px;
+
+        @media (max-width: $breakpoint-md) {
+            font-size: 18px;
+        }
     }
 
     &__span {
         font-size: 18px;
         font-weight: 500;
+
+        @media (max-width: $breakpoint-md) {
+            font-size: 14px;
+        }
     }
 
     ul {

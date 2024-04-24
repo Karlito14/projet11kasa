@@ -1,4 +1,5 @@
 import { CarouselHouse } from '../CarouselHouse/CarouselHouse';
+import { Host } from '../Host/Host';
 import { TitleHouse } from '../TitleHouse/TitleHouse';
 import style from './style.module.scss';
 
@@ -11,6 +12,7 @@ export const HouseSheet = ({ house }) => {
             <CarouselHouse pictures={pictures} title={title} />
             <section className={style.containerInfo}>
                 <TitleHouse title={title} location={location} tags={tags} />
+                <Host host={host} rating={rating} />
             </section>
         </main>
     );
