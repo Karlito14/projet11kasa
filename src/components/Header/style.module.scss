@@ -1,4 +1,6 @@
-$breakpoint-tablet : 760px;
+$breakpoint-md : 768px;
+$breakpoint-lg : 1024px;
+$breakpoint-xl : 1280px;
 
 .container {
     display: flex;
@@ -6,7 +8,7 @@ $breakpoint-tablet : 760px;
     align-items: center;
     padding: 45px;
 
-    @media (max-width: $breakpoint-tablet) {
+    @media (max-width: $breakpoint-md) {
         padding: 20px;
     }
 
@@ -16,7 +18,7 @@ $breakpoint-tablet : 760px;
         margin-right: 20px;
         transition: color 0.4s;
 
-        @media (max-width: $breakpoint-tablet) {
+        @media (max-width: $breakpoint-md) {
             width: 130px;
             height: 45px;
         }
@@ -38,7 +40,7 @@ $breakpoint-tablet : 760px;
                 color: lighten(black, 30%);
             }
 
-            @media (max-width: $breakpoint-tablet) {
+            @media (max-width: $breakpoint-md) {
                 font-size: 14px;
             }
         }
@@ -46,7 +48,7 @@ $breakpoint-tablet : 760px;
         &__link:first-child {
             margin-right: 40px;
 
-            @media (max-width: $breakpoint-tablet) {
+            @media (max-width: $breakpoint-md) {
                 margin-right: 20px;
             }
         }

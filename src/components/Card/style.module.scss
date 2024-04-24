@@ -1,0 +1,41 @@
+$breakpoint-md : 768px;
+$breakpoint-lg : 1024px;
+$breakpoint-xl : 1280px;
+
+.container {
+    height: 340px;
+    border-radius: 10px;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media (max-width: $breakpoint-md) {
+        height: 255px;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        height: 340px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        border-radius: 10px;
+        background: linear-gradient(transparent, #040404);
+
+        @media (max-width: $breakpoint-md) {
+            height: 255px;
+        }
+    }
+
+    &__title {
+        text-decoration: none;
+        color: white;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        font-size: 18px;
+        padding-right: 20px;
+    }
+}

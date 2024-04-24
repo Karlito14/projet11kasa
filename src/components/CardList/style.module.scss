@@ -1,0 +1,29 @@
+$breakpoint-sm : 640px;
+$breakpoint-md : 768px;
+$breakpoint-lg : 1024px;
+$breakpoint-xl : 1280px;
+
+.container {
+    background-color: #F6F6F6;
+    padding: 50px 40px;
+    border-radius: 25px;
+    margin: 0 45px;
+    margin-bottom: 45px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 340px);
+    gap: 30px;
+    justify-content: center;
+    list-style-type: none;
+
+    @media (max-width: $breakpoint-xl) {
+        justify-content: space-evenly;
+
+    }
+
+    @media (max-width: $breakpoint-md) {
+        padding: 0;
+        background-color: transparent;
+        margin: 30px 20px;
+        grid-template-columns: repeat(auto-fill, 100%);
+    }
+}
