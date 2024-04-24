@@ -15,6 +15,28 @@ $breakpoint-xl : 1280px;
         justify-content: space-between;
         margin-top: 15px;
 
+        & > li:first-child {
+            margin-right: 20px;
+        }
+
+        & > li > ul {
+            height: 150px;
+            overflow-y: hidden;
+
+            &:hover {
+                overflow-y: auto;
+            }
+        }
+
+        & > li > p {
+            height: 150px;
+            overflow-y: hidden;
+
+            &:hover {
+                overflow-y: auto;
+            }
+        }
+
         @media (max-width: $breakpoint-md) {
             flex-direction: column;
         }

@@ -39,9 +39,10 @@ $breakpoint-xl : 1280px;
 }
 
 .contentUl {
+    padding: 15px 30px;
+    @include content;
 
     &__contentLi {
-        @include content;
-        padding: 8px 15px;
+        padding-bottom: 10px;
     }
 }
