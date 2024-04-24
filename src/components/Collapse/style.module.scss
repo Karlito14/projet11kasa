@@ -1,0 +1,23 @@
+.container {
+    margin-bottom: 20px;
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        background-color: #FF6060;
+        color: white;
+        padding: 15px 30px;
+        border-radius: 5px;
+
+        &__icon {
+            cursor: pointer;
+            font-weight: 700;
+        }
+    }
+
+    &__content {
+        background-color: #F6F6F6;
+        padding: 15px 30px;
+        margin-top: -8px;
+    }
+}
