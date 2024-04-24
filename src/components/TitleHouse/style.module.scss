@@ -1,0 +1,20 @@
+$red-color : #FF6060;
+
+.container {
+
+    &__title {
+        color: $red-color;
+        font-size: 36px;
+    }
+
+    &__span {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        margin: 20px 0;
+    }
+}
