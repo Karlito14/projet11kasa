@@ -1,0 +1,24 @@
+$red-color : #FF6060;
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        margin-top: 30px;
+        font-size: 280px;
+        color: $red-color;
+    }
+
+    &__paragraph {
+        color: $red-color;
+        margin-top: 30px;
+        font-size: 36px;
+    }
+
+    &__link {
+        color: black;
+        margin: 50px;
+    }
+}
