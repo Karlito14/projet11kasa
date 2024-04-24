@@ -8,6 +8,17 @@ $breakpoint-xl : 1280px;
     @media (max-width: $breakpoint-md) {
         padding: 0 20px 45px;
     }
+
+    &__dropdown {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+
+        @media (max-width: $breakpoint-md) {
+            flex-direction: column;
+        }
+    }
 }
 
 .containerInfo {

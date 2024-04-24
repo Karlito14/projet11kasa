@@ -2,8 +2,6 @@ import { FaStar } from 'react-icons/fa';
 import style from './style.module.scss';
 
 export const Host = ({ host, rating}) => {
-    console.log(host);
-    console.log(rating);
 
     const renderStars = () => {
         const score = +rating;
