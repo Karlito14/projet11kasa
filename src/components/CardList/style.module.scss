@@ -10,20 +10,20 @@ $breakpoint-xl : 1280px;
     margin: 0 45px;
     margin-bottom: 45px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 340px);
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
     justify-content: center;
     list-style-type: none;
 
     @media (max-width: $breakpoint-xl) {
         justify-content: space-evenly;
-
+        grid-template-columns: 1fr 1fr;
     }
 
     @media (max-width: $breakpoint-md) {
         padding: 0;
         background-color: transparent;
         margin: 30px 20px;
-        grid-template-columns: repeat(auto-fill, 100%);
+        grid-template-columns: 1fr;
     }
 }

@@ -6,6 +6,10 @@ $breakpoint-xl : 1280px;
     background-color: #F6F6F6;
     margin-top: -5px;
     transition: all 0.4s;
+
+    @media (max-width: $breakpoint-md) {
+        font-size: 14px;
+    }
 }
 
 .container {
@@ -24,6 +28,10 @@ $breakpoint-xl : 1280px;
         padding: 15px 30px;
         border-radius: 5px;
         font-size: 18px;
+
+        @media (max-width: $breakpoint-md) {
+            font-size: 16px;
+        }
 
         &__icon {
             cursor: pointer;
