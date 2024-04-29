@@ -6,9 +6,10 @@ export const Card = ({ card }) => {
     return (
         <li>
             <Link to={`/house/${card.id}`} onClick={() => setCurrentPage('')}>
-                <article className={style.container} style={{backgroundImage: `url(${card.cover})`}}>
-                    <h2 className={style.container__title}>{card.title}</h2>
-                </article>
+                <figure className={style.container}>
+                    <img src={card.cover} alt={card.title} className={style.container__img} />
+                    <figcaption className={style.container__title}>{card.title}</figcaption>
+                </figure>
             </Link>
         </li>
     );
