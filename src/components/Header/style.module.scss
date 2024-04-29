@@ -16,7 +16,6 @@ $breakpoint-xl : 1280px;
         height: 68px;
         width: 210px;
         margin-right: 20px;
-        transition: color 0.4s;
         object-fit: contain;
 
         @media (max-width: $breakpoint-md) {
@@ -26,16 +25,14 @@ $breakpoint-xl : 1280px;
     }
 
     &__nav {
+        display: flex;
+        list-style: none;
 
         &__link {
             text-decoration: none;
             color: black;
             font-weight: 500;
             font-size: 20px;
-
-            &:visited {
-                text-decoration: underline;
-            }
 
             &:hover {
                 color: lighten(black, 30%);
