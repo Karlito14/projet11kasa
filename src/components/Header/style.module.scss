@@ -17,6 +17,7 @@ $breakpoint-xl : 1280px;
         width: 210px;
         margin-right: 20px;
         transition: color 0.4s;
+        object-fit: contain;
 
         @media (max-width: $breakpoint-md) {
             width: 110px;
