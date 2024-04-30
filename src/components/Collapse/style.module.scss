@@ -6,6 +6,7 @@ $breakpoint-xl : 1280px;
     background-color: #F6F6F6;
     margin-top: -5px;
     transition: all 0.4s;
+    padding: 15px 30px;
 
     @media (max-width: $breakpoint-md) {
         font-size: 14px;
@@ -42,13 +43,12 @@ $breakpoint-xl : 1280px;
 
     &__content {
         @include content;
-        padding: 15px 30px;
     }
 }
 
 .contentUl {
-    padding: 15px 30px;
     @include content;
+    list-style-type: none;
 
     &__contentLi {
         padding-bottom: 10px;

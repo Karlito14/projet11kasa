@@ -13,7 +13,7 @@ export const Collapse = ({ object }) => {
             const list = [];
 
             object.content.map((item, index) => {
-                list.push(<p className={style.contentUl__contentLi} key={`${index}-${item}`}>{item}</p>);
+                list.push(<li className={style.contentUl__contentLi} key={`${index}-${item}`}>{item}</li>);
             });
 
             return <ul className={style.contentUl}>{list}</ul>;
