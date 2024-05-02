@@ -19,16 +19,7 @@ $breakpoint-xl : 1280px;
             margin-right: 20px;
         }
 
-        & > li > ul {
-            height: 150px;
-            overflow-y: hidden;
-
-            &:hover {
-                overflow-y: auto;
-            }
-        }
-
-        & > li > p {
+        & > li > ul, & > li > p {
             height: 150px;
             overflow-y: hidden;
 
