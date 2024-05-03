@@ -26,9 +26,7 @@ export const Header = ({ updatePage, currentPage }) => {
                             onClick={() => updatePage('about')}
                         >A propos</Link>
                     </li>
-                </ul>
-                
-                
+                </ul> 
             </nav>
         </header>
     );

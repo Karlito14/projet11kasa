@@ -1,6 +1,4 @@
-$breakpoint-md : 768px;
-$breakpoint-lg : 1024px;
-$breakpoint-xl : 1280px;
+@use '../../variables.scss';
 
 .container {
     position: relative;
@@ -11,7 +9,7 @@ $breakpoint-xl : 1280px;
         border-radius: 10px;
         object-fit: cover;
 
-        @media (max-width: $breakpoint-md) {
+        @media (max-width: variables.$breakpoint-md) {
             height: 255px;
         }
     }
@@ -26,7 +24,7 @@ $breakpoint-xl : 1280px;
         border-radius: 10px;
         background: linear-gradient(transparent, #040404);
 
-        @media (max-width: $breakpoint-md) {
+        @media (max-width: variables.$breakpoint-md) {
             height: 255px;
         }
     }

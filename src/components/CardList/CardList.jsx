@@ -21,8 +21,7 @@ export const CardList = () => {
                 {data && data.map((house, index) => {
                     return <Card key={`${index}-${house.id}`} card={house} />;
                 })}
-            </ul>
-            
+            </ul>  
         </main>
     );
 };

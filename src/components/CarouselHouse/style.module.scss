@@ -1,6 +1,4 @@
-$breakpoint-md : 768px;
-$breakpoint-lg : 1024px;
-$breakpoint-xl : 1280px;
+@use '../../variables.scss';
 
 .containerImg {
     position: relative;
@@ -11,7 +9,7 @@ $breakpoint-xl : 1280px;
         object-fit: cover;
         border-radius: 25px;
 
-        @media (max-width: $breakpoint-md) {
+        @media (max-width: variables.$breakpoint-md) {
             height: 255px;
         }
     }
@@ -24,7 +22,7 @@ $breakpoint-xl : 1280px;
         transform: translateY(-50%);
         top: 50%;
 
-        @media (max-width: $breakpoint-md) {
+        @media (max-width: variables.$breakpoint-md) {
             font-size: 24px;
         }
     }
@@ -38,7 +36,7 @@ $breakpoint-xl : 1280px;
         font-weight: 500;
         color: white;
 
-        @media (max-width: $breakpoint-md) {
+        @media (max-width: variables.$breakpoint-md) {
             visibility: hidden;
         }
     }

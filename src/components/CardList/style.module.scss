@@ -1,7 +1,4 @@
-$breakpoint-sm : 640px;
-$breakpoint-md : 768px;
-$breakpoint-lg : 1024px;
-$breakpoint-xl : 1280px;
+@use '../../variables.scss';
 
 .container {
     background-color: #F6F6F6;
@@ -15,12 +12,12 @@ $breakpoint-xl : 1280px;
     justify-content: center;
     list-style-type: none;
 
-    @media (max-width: $breakpoint-xl) {
+    @media (max-width: variables.$breakpoint-xl) {
         justify-content: space-evenly;
         grid-template-columns: 1fr 1fr;
     }
 
-    @media (max-width: $breakpoint-md) {
+    @media (max-width: variables.$breakpoint-md) {
         padding: 0;
         background-color: transparent;
         margin: 30px 20px;

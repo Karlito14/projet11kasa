@@ -1,8 +1,4 @@
-$red-color : #FF6060;
-$breakpoint-sm : 640px;
-$breakpoint-md : 768px;
-$breakpoint-lg : 1024px;
-$breakpoint-xl : 1280px;
+@use '../../variables.scss';
 
 .container {
     display: flex;
@@ -13,20 +9,20 @@ $breakpoint-xl : 1280px;
     &__title {
         margin-top: 30px;
         font-size: 280px;
-        color: $red-color;
+        color: variables.$red-color;
 
-        @media (max-width: $breakpoint-md) {
+        @media (max-width: variables.$breakpoint-md) {
             margin-top: 80px;
             font-size: 90px;
         }
     }
 
     &__paragraph {
-        color: $red-color;
+        color: variables.$red-color;
         margin-top: 30px;
         font-size: 36px;
 
-        @media (max-width: $breakpoint-md) {
+        @media (max-width: variables.$breakpoint-md) {
             margin-top: 80px;
             font-size: 22px;
         }
@@ -35,8 +31,9 @@ $breakpoint-xl : 1280px;
     &__link {
         color: black;
         margin: 50px;
+        font-weight: 500;
 
-        @media (max-width: $breakpoint-md) {
+        @media (max-width: variables.$breakpoint-md) {
             margin: 80px 0;
         }
     }

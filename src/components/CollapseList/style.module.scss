@@ -1,11 +1,9 @@
-$breakpoint-md : 768px;
-$breakpoint-lg : 1024px;
-$breakpoint-xl : 1280px;
+@use '../../variables.scss';
 
 .container {
     padding: 30px;
     
-    @media (max-width: $breakpoint-md) {
+    @media (max-width: variables.$breakpoint-md) {
         padding: 30px 20px;
     }
 

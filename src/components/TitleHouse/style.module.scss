@@ -1,24 +1,21 @@
-$red-color : #FF6060;
-$breakpoint-md : 768px;
-$breakpoint-lg : 1024px;
-$breakpoint-xl : 1280px;
+@use '../../variables.scss';
 
 .container {
     width: 60%;
 
-    @media (max-width: $breakpoint-lg) {
+    @media (max-width: variables.$breakpoint-lg) {
         width: 80%;
     }
 
-    @media (max-width: $breakpoint-md) {
+    @media (max-width: variables.$breakpoint-md) {
         width: 100%;
     }
 
     &__title {
-        color: $red-color;
+        color: variables.$red-color;
         font-size: 36px;
 
-        @media (max-width: $breakpoint-md) {
+        @media (max-width: variables.$breakpoint-md) {
             font-size: 18px;
         }
     }
@@ -27,7 +24,7 @@ $breakpoint-xl : 1280px;
         font-size: 18px;
         font-weight: 500;
 
-        @media (max-width: $breakpoint-md) {
+        @media (max-width: variables.$breakpoint-md) {
             font-size: 14px;
         }
     }

@@ -1,4 +1,4 @@
-$breakpoint-tablet : 760px;
+@use '../../variables.scss';
 
 .container {
     margin: 0 45px;
@@ -15,7 +15,7 @@ $breakpoint-tablet : 760px;
     position: relative;
     padding: 30px;
 
-    @media (max-width: $breakpoint-tablet) {
+    @media (max-width: variables.$breakpoint-md) {
         height: 110px;
         justify-content: flex-start;
         margin: 20px 20px;
@@ -37,7 +37,7 @@ $breakpoint-tablet : 760px;
         color: white;
         z-index: 1;
 
-        @media (max-width: $breakpoint-tablet) {
+        @media (max-width: variables.$breakpoint-md) {
             font-size: 20px;
         }
     }
