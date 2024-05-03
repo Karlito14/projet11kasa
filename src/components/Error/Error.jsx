@@ -14,7 +14,7 @@ export const Error = () => {
         <main className={style.container}>
             <h2 className={style.container__title}>404</h2>
             <p className={style.container__paragraph}>Oups! La page que vous demandez n&apos;existe pas.</p>
-            <Link to='/' onClick={() => setCurrentPage('home')} className={style.container__link}>Retourner sur la page d’accueil</Link>
+            <Link to='/' onClick={() => setCurrentPage('/')} className={style.container__link}>Retourner sur la page d’accueil</Link>
         </main>
     );
 };

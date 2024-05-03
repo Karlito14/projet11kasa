@@ -1,7 +1,7 @@
 @use '../../variables.scss';
 
 .container {
-    background-color: #F6F6F6;
+    background-color: variables.$grey-bg;
     padding: 50px 40px;
     border-radius: 25px;
     margin: 0 45px;

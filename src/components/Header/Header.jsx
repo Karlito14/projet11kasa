@@ -14,16 +14,16 @@ export const Header = ({ updatePage, currentPage }) => {
                         <Link 
                             className={style.container__nav__link} 
                             to='/' 
-                            style={{textDecoration: currentPage === 'home' ? 'underline' : ''}}
-                            onClick={() => updatePage('home')}
+                            style={{textDecoration: currentPage === '/' ? 'underline' : ''}}
+                            onClick={() => updatePage('/')}
                         >Accueil</Link>
                     </li>
                     <li>
                         <Link 
                             className={style.container__nav__link} 
                             to='/about'
-                            style={{textDecoration: currentPage === 'about' ? 'underline' : ''}}
-                            onClick={() => updatePage('about')}
+                            style={{textDecoration: currentPage === '/about' ? 'underline' : ''}}
+                            onClick={() => updatePage('/about')}
                         >A propos</Link>
                     </li>
                 </ul> 

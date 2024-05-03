@@ -5,10 +5,19 @@ import { IoIosArrowDown } from 'react-icons/io';
 export const Collapse = ({ object }) => {
     const [displayContent, setDisplayContent] = useState(false);
 
+    const styleContent = () => {
+        const style = {
+            opacity: displayContent ? '1' : '0',
+            position: displayContent ? 'relative' : 'absolute',
+        };
+
+        return style;
+    };
+
     const renderContent = () => {
         const typeContent = typeof object.content;
         if(typeContent === 'string') {
-            return <p className={style.container__content}>{object.content}</p>;
+            return <p className={style.container__content} style={styleContent()}>{object.content}</p>;
         } else if (typeContent === 'object') {
             const list = [];
 
@@ -16,7 +25,7 @@ export const Collapse = ({ object }) => {
                 list.push(<li className={style.contentUl__contentLi} key={`${index}-${item}`}>{item}</li>);
             });
 
-            return <ul className={style.contentUl}>{list}</ul>;
+            return <ul className={style.contentUl} style={styleContent()}>{list}</ul>;
         }
     };
 
@@ -30,7 +39,7 @@ export const Collapse = ({ object }) => {
                     style={{transform: !displayContent ? 'rotate(180deg)' : ''}}
                 /> 
             </h3>
-            {displayContent && renderContent()}
+            {renderContent()}
         </li>
     );
 };

@@ -1,9 +1,9 @@
 @use '../../variables.scss';
 
 @mixin content {
-    background-color: #F6F6F6;
+    background-color: variables.$grey-bg;
     margin-top: -5px;
-    transition: all 0.4s;
+    transition: all 0.2s;
     padding: 15px 30px;
 
     @media (max-width: variables.$breakpoint-md) {
@@ -14,6 +14,7 @@
 .container {
     margin-bottom: 20px;
     width: 90%;
+    position: relative;
 
     @media (max-width: variables.$breakpoint-md) {
         width: 100%;
@@ -22,7 +23,7 @@
     &__title {
         display: flex;
         justify-content: space-between;
-        background-color: #FF6060;
+        background-color: variables.$red-color;
         color: white;
         padding: 15px 30px;
         border-radius: 5px;
