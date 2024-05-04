@@ -9,7 +9,6 @@ export const Error = () => {
         setCurrentPage('');
     }),[];
 
-
     return (
         <main className={style.container}>
             <h2 className={style.container__title}>404</h2>
