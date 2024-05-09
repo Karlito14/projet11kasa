@@ -4,7 +4,7 @@ import { IoIosArrowDown } from 'react-icons/io';
 
 export const Collapse = ({ object }) => {
     const [displayContent, setDisplayContent] = useState(false);
-
+    
     const styleContent = () => {
         const style = {
             opacity: displayContent ? '1' : '0',

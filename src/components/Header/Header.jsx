@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import { Link } from 'react-router-dom';
 import logo from '../../assets/LOGO.png';
 import style from './style.module.scss';
@@ -7,7 +6,9 @@ export const Header = ({ updatePage, currentPage }) => {
 
     return (
         <header className={style.container}>
-            <img className={style.container__logo} src={logo} alt='Kasa' />
+            <Link to='/' onClick={() => updatePage('/')}>
+                <img className={style.container__logo} src={logo} alt='Kasa' />
+            </Link>
             <nav>
                 <ul className={style.container__nav}>
                     <li>
