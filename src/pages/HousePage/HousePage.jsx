@@ -12,8 +12,12 @@ export const HousePage = () => {
 
     useEffect(() => {
         const getHouse = async () => {
-            const data = await ApiData.fetchByID(id);
-            setHouse(data);
+            try {
+                const data = await ApiData.fetchByID(id);
+                setHouse(data);  
+            } catch (error) {
+                console.error(error);
+            }
         };
         getHouse();
     },[]);

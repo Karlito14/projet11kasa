@@ -9,8 +9,12 @@ export const HomePage = () => {
 
     useEffect(() => {
         const getData = async () => {
-            const housesData = await ApiData.fetchAll();
-            setData(housesData);
+            try {
+                const housesData = await ApiData.fetchAll();
+                setData(housesData);
+            } catch (error) {
+                console.error(error);
+            }  
         };
         getData();
     }, []);
