@@ -6,29 +6,29 @@ import { ApiData } from '../../../api/api-data';
 import { Error } from '../../components/Error/Error';
 
 export const HousePage = () => {
-    const [house, setHouse] = useState(null);
+  const [house, setHouse] = useState(null);
     
-    const { id } = useParams();
+  const { id } = useParams();
 
-    useEffect(() => {
-        const getHouse = async () => {
-            try {
-                const data = await ApiData.fetchByID(id);
-                setHouse(data);  
-            } catch (error) {
-                console.error(error);
-            }
-        };
-        getHouse();
-    },[]);
-
-    const renderComponent = () => {
-        if(house) {
-            return <HouseSheet house={house} />;
-        } else if(house === undefined) {
-            return <Error />;
-        }
+  useEffect(() => {
+    const getHouse = async () => {
+      try {
+        const data = await ApiData.fetchByID(id);
+        setHouse(data);  
+      } catch (error) {
+        console.error(error);
+      }
     };
+    getHouse();
+  },[]);
 
-    return renderComponent();
+  const renderComponent = () => {
+    if(house) {
+      return <HouseSheet house={house} />;
+    } else if(house === undefined) {
+      return <Error />;
+    }
+  };
+
+  return renderComponent();
 };

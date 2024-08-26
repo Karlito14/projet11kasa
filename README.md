@@ -31,7 +31,7 @@ Kasa est dans le métier de la location d’appartements entre particuliers depu
 
 Pour tester le projet :
 
-Cliquez [ici]() ou cloner le dépot github et lancer le projet avec **npm run dev**
+Cloner le dépot github et lancer le projet avec **npm run dev**
 
 Réalisé par [Carlos Leiroz](https://www.linkedin.com/in/carlos-leiroz/)
 

@@ -4,13 +4,13 @@ import { Footer } from './components/Footer/Footer';
 import { useState } from 'react';
 
 export const App = () => {
-    const [currentPage, setCurrentPage] = useState(window.location.pathname);
+  const [currentPage, setCurrentPage] = useState(window.location.pathname);
 
-    return (
-        <>
-            <Header updatePage={setCurrentPage} currentPage={currentPage} />
-            <Outlet context={setCurrentPage} />
-            <Footer />
-        </>
-    );
+  return (
+    <>
+      <Header updatePage={setCurrentPage} currentPage={currentPage} />
+      <Outlet context={setCurrentPage} />
+      <Footer />
+    </>
+  );
 };
