@@ -1,4 +1,5 @@
 import ReactDOM from 'react-dom/client';
+// import 'dotenv/config';
 import { App } from './App.jsx';
 import './global.scss';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -6,6 +7,8 @@ import { HomePage } from './pages/HomePage/HomePage.jsx';
 import { AboutPage } from './pages/AboutPage/AboutPage.jsx';
 import { ErrorPage } from './pages/ErrorPage/ErrorPage.jsx';
 import { HousePage } from './pages/HousePage/HousePage.jsx';
+
+console.log(import.meta.env);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
